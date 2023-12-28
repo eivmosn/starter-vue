@@ -1,8 +1,7 @@
 import { defineComponent } from "vue";
-import { RouterView } from "vue-router";
 
 export default defineComponent({
     render() {
-        return <RouterView />
+        return <div class='b grid align-content-baseline grid-temp-24'>123</div>
     }
 })

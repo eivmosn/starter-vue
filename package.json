@@ -18,7 +18,6 @@
     "naive-ui": "^2.36.0",
     "simple-git-hooks": "^2.9.0",
     "unocss": "^0.58.0",
-    "unplugin-vue-router": "^0.7.0",
     "vite": "^5.0.10",
     "vue": "^3.3.13",
     "vue-router": "^4.2.5"

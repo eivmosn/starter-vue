@@ -6,10 +6,6 @@ import VueRouter from 'unplugin-vue-router/vite'
 
 export default defineConfig({
     plugins: [
-        VueRouter({
-            dts: true,
-            extensions: ['.tsx', '.vue'],
-        }),
         Vue(),
         Jsx(),
         Unocss()
