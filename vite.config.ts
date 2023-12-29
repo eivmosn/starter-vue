@@ -4,9 +4,9 @@ import Unocss from 'unocss/vite'
 import Jsx from '@vitejs/plugin-vue-jsx'
 
 export default defineConfig({
-    plugins: [
-        Vue(),
-        Jsx(),
-        Unocss()
-    ],
+  plugins: [
+    Vue(),
+    Jsx(),
+    Unocss(),
+  ],
 })

@@ -10,20 +10,22 @@
     "dev": "vite --host"
   },
   "dependencies": {
-    "@antfu/eslint-config": "^2.6.1",
-    "@vitejs/plugin-vue": "^5.0.0",
-    "@vitejs/plugin-vue-jsx": "^3.1.0",
-    "lint-staged": "^15.2.0",
     "naive-ui": "^2.36.0",
-    "simple-git-hooks": "^2.9.0",
-    "unocss": "^0.58.2",
-    "vite": "^5.0.10",
     "vue": "^3.4.0",
-    "vue-router": "^4.2.5",
-    "vue-tsc": "^1.8.27"
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
-    "eslint": "^8.56.0"
+    "@antfu/eslint-config": "^2.6.1",
+    "@types/node": "^20.10.5",
+    "@vitejs/plugin-vue": "^5.0.0",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "eslint": "^8.56.0",
+    "lint-staged": "^15.2.0",
+    "simple-git-hooks": "^2.9.0",
+    "typescript": "^5.3.3",
+    "unocss": "^0.58.2",
+    "vite": "^5.0.10",
+    "vue-tsc": "^1.8.27"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"

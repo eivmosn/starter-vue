@@ -1,10 +1,10 @@
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue'
 
 export default defineComponent({
-    setup() {
-        console.log(123);
-    },
-    render() {
-        return <div></div>
-    },
+  setup() {
+    console.log(123)
+  },
+  render() {
+    return <div></div>
+  },
 })
