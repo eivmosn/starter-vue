@@ -1,12 +1,12 @@
 import {
     defineConfig,
-    presetMini,
+    presetUno,
     transformerVariantGroup,
-} from 'unocss'
+} from 'unocss';
 
 export default defineConfig({
     presets: [
-        presetMini()
+        presetUno()
     ],
     transformers: [
         transformerVariantGroup()
@@ -26,7 +26,7 @@ export default defineConfig({
         })],
         [/^b-(top|bottom|left|right)/, ([, d]) => ({
             [`border-${d}`]: '1px solid'
-        })]
+        })],
     ],
     autocomplete: {
         templates: [

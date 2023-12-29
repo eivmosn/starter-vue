@@ -1,8 +1,9 @@
 import { createApp } from 'vue'
 import App from "./App"
-
 import 'uno.css'
-
 const app = createApp(App)
+app.mount('#app')
+console.log(123);
 
-app.mount('#app');
+
+
