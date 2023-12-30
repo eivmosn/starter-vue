@@ -1,9 +1,11 @@
 import {
   NConfigProvider,
   NDialogProvider,
+  NEl,
   NLoadingBarProvider,
   NMessageProvider,
   NNotificationProvider,
+  darkTheme,
   useDialog,
   useLoadingBar,
   useMessage,
@@ -11,7 +13,7 @@ import {
 } from 'naive-ui'
 import { defineComponent, renderSlot } from 'vue'
 
-const Global = defineComponent({
+const GlobalProvider = defineComponent({
   name: 'Global',
   setup() {
     window.$dialog = useDialog()
@@ -20,7 +22,11 @@ const Global = defineComponent({
     window.$notification = useNotification()
   },
   render() {
-    return renderSlot(this.$slots, 'default')
+    return (
+      <NEl class="h-full bg-[var(--body-color)] text-[var(--text-color-base)]">
+        {renderSlot(this.$slots, 'default')}
+      </NEl>
+    )
   },
 })
 
@@ -37,9 +43,9 @@ export const Provider = defineComponent({
           <NLoadingBarProvider>
             <NMessageProvider>
               <NDialogProvider>
-                <Global>
-                  123123
-                </Global>
+                <GlobalProvider>
+                  {renderSlot(this.$slots, 'default')}
+                </GlobalProvider>
               </NDialogProvider>
             </NMessageProvider>
           </NLoadingBarProvider>
