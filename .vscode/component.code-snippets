@@ -1,0 +1,26 @@
+{
+    "create new component": {
+        "scope": "typescriptreact,javascriptreact",
+        "prefix": "vtx",
+        "body": [
+            "import type { ExtractPublicPropTypes } from 'vue'",
+            "import { defineComponent } from 'vue'",
+            "",
+            "export const $1Props = {",
+            "",
+            "} as const",
+            "",
+            "export type IProps = ExtractPublicPropTypes<typeof $1Props>",
+            "",
+            "export default defineComponent({",
+            "  name: '$TM_FILENAME_BASE',",
+            "  inheritAttrs: false,",
+            "  props: $1Props,",
+            "  render() {",
+            "    return <div>$TM_FILENAME_BASE</div>",
+            "  },",
+            "})",
+            ""
+        ]
+    }
+}

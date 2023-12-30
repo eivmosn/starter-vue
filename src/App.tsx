@@ -1,7 +1,15 @@
 import { defineComponent } from 'vue'
+import { Provider } from './components'
 
 export default defineComponent({
+  name: 'App',
+  inheritAttrs: false,
+  setup() {
+
+  },
   render() {
-    return <div>123</div>
+    return (
+      <Provider />
+    )
   },
 })
