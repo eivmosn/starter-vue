@@ -1,3 +1,4 @@
+import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Unocss from 'unocss/vite'
@@ -9,4 +10,9 @@ export default defineConfig({
     Jsx(),
     Unocss(),
   ],
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+  },
 })

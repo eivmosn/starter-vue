@@ -1,5 +1,5 @@
 import { defineComponent } from 'vue'
-import { Provider } from './components'
+import { Provider } from '@/components'
 
 export default defineComponent({
   name: 'App',

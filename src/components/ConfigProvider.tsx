@@ -11,7 +11,7 @@ import {
   useNotification,
 } from 'naive-ui'
 import { defineComponent, renderSlot } from 'vue'
-import { theme } from '../composables/theme'
+import { theme } from '@/composables/theme'
 
 const GlobalProvider = defineComponent({
   name: 'Global',
