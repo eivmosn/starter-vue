@@ -5,13 +5,13 @@ import {
   NLoadingBarProvider,
   NMessageProvider,
   NNotificationProvider,
-  darkTheme,
   useDialog,
   useLoadingBar,
   useMessage,
   useNotification,
 } from 'naive-ui'
 import { defineComponent, renderSlot } from 'vue'
+import { theme } from '../composables/theme'
 
 const GlobalProvider = defineComponent({
   name: 'Global',
@@ -38,6 +38,7 @@ export const Provider = defineComponent({
       <NConfigProvider
         class="h-full"
         inlineThemeDisabled
+        theme={theme.value}
       >
         <NNotificationProvider>
           <NLoadingBarProvider>

@@ -10,6 +10,7 @@
     "dev": "vite --host"
   },
   "dependencies": {
+    "@vueuse/core": "^10.7.1",
     "naive-ui": "^2.36.0",
     "vue": "^3.4.3",
     "vue-router": "^4.2.5"
