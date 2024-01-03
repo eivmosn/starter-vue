@@ -10,7 +10,7 @@ export default defineComponent({
   render() {
     return (
       <Provider>
-
+        <div class="flex-center">13</div>
       </Provider>
     )
   },
