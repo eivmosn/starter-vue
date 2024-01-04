@@ -15,4 +15,25 @@ export const rules: Rule[] = [
   [/^b-(top|bottom|left|right)/, ([, d]) => ({
     [`border-${d}`]: '1px solid',
   })],
+  [/^base-(text|content)/, ([, d]) => {
+    const text = `
+        .dark .base-${d} {
+            color: #fff
+        }
+        .base-text {
+            color: #000
+        }
+    `
+    const content = `
+        .dark .base-${d} {
+            background-color: rgb(16,16,20)
+        }
+        .base-${d} {
+            background-color: #fff
+        }
+    `
+    if (d === 'text')
+      return text
+    return content
+  }],
 ]
