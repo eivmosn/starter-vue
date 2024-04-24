@@ -6,7 +6,8 @@ export default defineComponent({
   render() {
     return (
       <div>
-        Hello Vite!!!
+        Hello
+        <span class="text-orange text-2em">Vite!!!</span>
       </div>
     )
   },
