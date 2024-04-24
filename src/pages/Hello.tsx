@@ -1,13 +1,12 @@
 import { defineComponent } from 'vue'
-import Hello from '@/pages/Hello'
 
 export default defineComponent({
-  name: 'App',
+  name: 'Hello',
   inheritAttrs: false,
   render() {
     return (
       <div>
-        <Hello />
+        Hello Vite!!!
       </div>
     )
   },
