@@ -15,21 +15,26 @@
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
-    "axios": "^1.6.8",
-    "naive-ui": "^2.38.1",
-    "vue": "^3.4.25",
-    "vue-router": "^4.3.2"
+    "axios": "^1.7.4",
+    "naive-ui": "^2.39.0",
+    "vue": "^3.4.38",
+    "vue-router": "^4.4.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.15.0",
-    "@types/node": "^20.12.7",
-    "@vitejs/plugin-vue": "^5.0.4",
-    "@vitejs/plugin-vue-jsx": "^3.1.0",
-    "@vueuse/core": "^10.9.0",
-    "eslint": "^8.57.0",
-    "typescript": "^5.4.5",
-    "unocss": "^0.59.4",
-    "vite": "^5.2.10",
-    "vue-tsc": "^2.0.14"
+    "@antfu/eslint-config": "^2.26.0",
+    "@types/node": "^22.4.1",
+    "@vitejs/plugin-vue-jsx": "^4.0.1",
+    "@vueuse/core": "^11.0.1",
+    "eslint": "^9.9.0",
+    "typescript": "^5.5.4",
+    "unocss": "^0.62.2",
+    "vite": "^5.4.1"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "allowAny": [
+        "eslint"
+      ]
+    }
   }
 }
