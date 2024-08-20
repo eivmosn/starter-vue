@@ -1,5 +1,5 @@
 import { defineComponent } from 'vue'
-import Hello from '@/pages/Hello'
+import Hello from 'src/pages/Hello'
 
 export default defineComponent({
   name: 'App',
