@@ -3,6 +3,7 @@ import { createApp as createVueApp } from 'vue'
 import App from './App'
 
 import 'uno.css'
+import './themes'
 
 function createApp() {
   return new Promise<VueApp<Element>>((resolve) => {

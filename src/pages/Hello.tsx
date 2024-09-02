@@ -5,7 +5,7 @@ export default defineComponent({
   inheritAttrs: false,
   render() {
     return (
-      <div>
+      <div class="p-10">
         Hello
         <span class="text-(23px blue-500)">Vite!!!</span>
       </div>
