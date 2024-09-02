@@ -5,10 +5,6 @@ export default defineComponent({
   name: 'App',
   inheritAttrs: false,
   render() {
-    return (
-      <div>
-        <Hello />
-      </div>
-    )
+    return <Hello />
   },
 })

@@ -7,7 +7,7 @@ export default defineComponent({
     return (
       <div>
         Hello
-        <span class="bg text-(13px blue-500)">Vite!!!</span>
+        <span class="text-(23px blue-500)">Vite!!!</span>
       </div>
     )
   },
