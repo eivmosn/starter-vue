@@ -1,33 +1,7 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "jsx": "preserve",
-    "jsxImportSource": "vue",
-    "lib": [
-      "ESNext",
-      "DOM"
-    ],
-    "useDefineForClassFields": true,
-    "baseUrl": ".",
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "paths": {
-      "src/*": [
-        "src/*"
-      ]
-    },
-    "resolveJsonModule": true,
-    "types": [
-      "vite/client",
-      "naive-ui/volar"
-    ],
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "isolatedModules": true,
-    "skipLibCheck": true
-  },
-  "exclude": [
-    "node_modules"
-  ]
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "files": []
 }

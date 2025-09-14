@@ -1,15 +1,10 @@
-import { defineConfig } from 'vite'
+import Vue from '@vitejs/plugin-vue'
 import UnoCSS from 'unocss/vite'
-import VueJsx from '@vitejs/plugin-vue-jsx'
+import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [
-    VueJsx(),
+    Vue(),
     UnoCSS(),
   ],
-  resolve: {
-    alias: {
-      src: '/src',
-    },
-  },
 })
