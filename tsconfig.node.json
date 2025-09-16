@@ -7,6 +7,9 @@
     "module": "ESNext",
     /* Bundler mode */
     "moduleResolution": "bundler",
+    "types": [
+      "vitest/config"
+    ],
     "allowImportingTsExtensions": true,
     /* Linting */
     "strict": true,
@@ -19,5 +22,7 @@
     "skipLibCheck": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["vite.config.ts"]
+  "include": [
+    "vite.config.ts"
+  ]
 }
