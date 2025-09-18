@@ -22,7 +22,6 @@ dist-ssr
 *.sw?
 
 # dependency directories
-auto-imports.d.ts
 pnpm-lock.yaml
 *.zip
 

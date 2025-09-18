@@ -1,12 +1,14 @@
 import {
   defineConfig,
-  presetUno,
+  presetTypography,
+  presetWind3,
   transformerVariantGroup,
 } from 'unocss'
 
 export default defineConfig({
   presets: [
-    presetUno(),
+    presetWind3(),
+    presetTypography(),
   ],
   transformers: [
     transformerVariantGroup(),
