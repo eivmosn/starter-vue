@@ -12,6 +12,7 @@ export default antfu(
           message: 'Use const enums instead',
         },
       ],
+      'ts/no-unsafe-function-type': 'off',
     },
     gitignore: true,
   },
