@@ -5,12 +5,12 @@
     "lib": ["ES2023"],
     "moduleDetection": "force",
     "module": "ESNext",
+
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "types": [
-      "vitest/config"
-    ],
+    "types": ["node"],
     "allowImportingTsExtensions": true,
+
     /* Linting */
     "strict": true,
     "noFallthroughCasesInSwitch": true,
@@ -22,7 +22,5 @@
     "skipLibCheck": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": [
-    "vite.config.ts"
-  ]
+  "include": ["vite.config.ts", "eslint.config.mjs"]
 }

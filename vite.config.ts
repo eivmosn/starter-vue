@@ -1,29 +1,15 @@
-import process from 'node:process'
-import Vue from '@vitejs/plugin-vue'
-import VueJsx from '@vitejs/plugin-vue-jsx'
+import vue from '@vitejs/plugin-vue'
 import UnoCSS from 'unocss/vite'
-import { defineConfig, loadEnv } from 'vite'
+import { defineConfig } from 'vite'
+import VueRouter from 'vue-router/vite'
 
-export default defineConfig(({ mode }) => {
-  const {
-    VITE_API_PREFIX,
-    VITE_API_BASE_URL,
-  } = loadEnv(mode, process.cwd())
-
-  return {
-    plugins: [
-      Vue(),
-      VueJsx(),
-      UnoCSS(),
-    ],
-    test: {
-      include: ['test/**/*.test.ts'],
-      environment: 'jsdom',
-    },
-    server: {
-      proxy: {
-        [VITE_API_PREFIX]: VITE_API_BASE_URL,
-      },
-    },
-  }
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [
+    VueRouter({
+      dts: 'src/route-map.d.ts',
+    }),
+    vue(),
+    UnoCSS(),
+  ],
 })

@@ -1,19 +1,13 @@
 import antfu from '@antfu/eslint-config'
 
-export default antfu(
-  {
-    unocss: true,
-    rules: {
-      'no-console': 'off',
-      'no-restricted-syntax': [
-        'error',
-        {
-          selector: 'TSEnumDeclaration:not([const=true])',
-          message: 'Use const enums instead',
-        },
-      ],
-      'ts/no-unsafe-function-type': 'off',
-    },
-    gitignore: true,
+export default antfu({
+  vue: true,
+  typescript: true,
+  rules: {
+    'no-console': 'warn',
+    'vue/component-name-in-template-casing': ['error', 'kebab-case', {
+      registeredComponentsOnly: true,
+      ignores: [],
+    }],
   },
-)
+})
