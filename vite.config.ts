@@ -12,4 +12,9 @@ export default defineConfig({
     vue(),
     UnoCSS(),
   ],
+  resolve: {
+    alias: {
+      '@composables': '/src/composables',
+    },
+  },
 })
